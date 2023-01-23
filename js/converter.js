@@ -84,6 +84,7 @@ DataConverter.prototype.create = function(w,h) {
   this.outputHeader = $(outputHeaderText);
   this.outputTextArea = $('<textarea class="textInputs" id="dataOutput"></textarea>');
 
+  
   this.node.append(this.inputHeader);
   this.node.append(this.inputTextArea);
   this.node.append(this.outputHeader);

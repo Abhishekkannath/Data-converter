@@ -8,14 +8,11 @@ build: 56
 html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
 
 
-/*
-Mr. Data Converter styles
-*/
 
 
 html {
 	font-family: Helvetica, Arial;
-	background: #141414 url('../images/background.png') no-repeat;
+	background: #ffffff url('') no-repeat;
 }
 
 body {
@@ -34,8 +31,8 @@ body {
 
 #header {
 	
-	color: #FFF;
-	width: 300px;
+	color: rgb(4, 7, 39);
+	
 	overflow: auto;
 }
 #header a {
@@ -44,7 +41,7 @@ body {
 }
 
 #header p {
-	color: #CCC;
+	color: rgb(0, 0, 0);
 }
 
 #description p {
@@ -60,13 +57,13 @@ body {
 }
 
 h1 {
-  color: #DEDEDE;
+  color: #a115ff;
   font-family: palatino, Georgia;
 	font-size: 40px;
 	line-height: 40px;
 	font-weight: bold;
 	margin-bottom: 8px;
-	text-shadow: 1px 1px 3px #000;
+	text-shadow: 1px 1px 3px rgb(149, 191, 238);
 }
 
 p {
@@ -98,9 +95,7 @@ p {
 /*converter*/
 
 #converter {
-	position: absolute;
-	top: 15px;
-	left: 330px;
+	
 	border-color:#000000 #666666 #666666 #000000;
   border-style:solid;
   border-width:2px;
@@ -114,15 +109,16 @@ p.dataHeaders{
 
 .textInputs {
   
-  background-color: #C9B7C7;
+  background-color: #dff9ff;
   border: none;
-  color: #664D63;
+  color: #181888;
   font-family: monospace;
   font-size: 12px;
-  height: 300px;
+  height: 200px;
+  width: 100%;
   line-height: 18px;
   padding: 10px;
-  text-shadow: #DED4DD 0px 1px 0px;
+  text-shadow: #000000 0px 1px 0px;
   -webkit-box-shadow: #333 1px 1px 10px inset;
   -moz-box-shadow: #333 1px 1px 10px inset;
 }
@@ -130,10 +126,10 @@ p.dataHeaders{
 
 .groupHeader{
   width: 100%;
-  color: #FFF;
+  color: rgb(255, 255, 255);
   height: 45px;
-  background-color:#5F255C;
-  background-image: url('../images/header_gradient.png');
+  background-color:#070f39;
+  background-image: url('');
 }
 
 
@@ -146,7 +142,7 @@ p.groupHeadline {
 }
 
 .groupHeader a {
-  color: #FF66FF;
+  color: #f9f9f9;
 }
 
 
