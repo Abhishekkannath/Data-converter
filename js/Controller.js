@@ -1,29 +1,21 @@
 var _gaq = _gaq || [];
 
 $(document).ready(function(){
-  var widthOffset = 345;
-  var heightOffset = 35
+  
 
   var d = new DataConverter('converter');
 
   var sidebar = $('#header');
 
   var win = $(window);
-  var w = win.width() - widthOffset;
-  var h = win.height() - heightOffset;
+ 
 
-  d.create(w,h);
+  d.create();
+ 
 
   $(".settingsElement").change(updateSettings);
 
-  $(window).bind('resize',function() {  
-
-      w = win.width() - widthOffset;
-      h = win.height() - heightOffset;
-      d.resize(w,h);
-      sidebar.height(h);
-
-    });
+  
 
 
   function updateSettings (evt) {
