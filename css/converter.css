@@ -5,10 +5,38 @@ http://developer.yahoo.com/yui/license.html
 version: 3.1.2
 build: 56
 */
-html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
 
 
+@media (min-width: 1200px) {
+  #description p {
+    font-size: 15px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  #description p {
+    font-size: 30px;
+  }
+}
 
+@media (min-width: 1200px) {
+  #settings p {
+    font-size: 15px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  #settings p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+}
 
 html {
 	font-family: Helvetica, Arial;
@@ -16,7 +44,8 @@ html {
 }
 
 body {
-  overflow: hidden;
+  
+  background:#02060d !important;
 }
 
 #base {
@@ -31,9 +60,9 @@ body {
 
 #header {
 	
-	color: rgb(4, 7, 39);
+	color: #697A98;
 	
-	overflow: auto;
+	
 }
 #header a {
 	color: #99FFFF;
@@ -41,7 +70,8 @@ body {
 }
 
 #header p {
-	color: rgb(0, 0, 0);
+	color: #697A98;
+  
 }
 
 #description p {
@@ -49,42 +79,44 @@ body {
 }
 
 #header h3 {
-  font-size: 12px;
+  font-size: 2rem;
   margin: 15px 0 10px 0;
-  padding: 15px 0 0 0;
-  border-top: solid 1px #CCC;
-  text-transform: uppercase;
+  padding: 15px 0 5px 0;
+  
+  
 }
 
 h1 {
-  color: #a115ff;
-  font-family: palatino, Georgia;
-	font-size: 40px;
-	line-height: 40px;
-	font-weight: bold;
-	margin-bottom: 8px;
-	text-shadow: 1px 1px 3px rgb(149, 191, 238);
+  font-size: 72px;
+  font-family:'Arial Black', sans-serif;
+  background: -webkit-linear-gradient(#8FC8EB, #19335A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+      padding-top: 15px;
 }
 
 p {
-	font-size: 15px;
-	line-height: 22px;
+	
+	
 }
 
 /*settings*/
 #settings {
-
+  padding-top: 15px;
+  
+  background: rgb(2,6,13);
+  background: linear-gradient(90deg, rgba(2,6,13,1) 0%, rgba(20,34,57,1) 50%, rgba(2,6,13,1) 100%);
 }
 
 
 #settings h5 {
-  font-size: 13px;
+ 
   line-height: 24px;
 }
 
 #settings p {
-  font-size: 13px;
-  line-height: 24px;
+  
+ 
 }
 
 
@@ -96,7 +128,7 @@ p {
 
 #converter {
 	
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	box-shadow: #8fc8eb8d -3px -3px 12px;
 }
 
 
@@ -121,10 +153,10 @@ p.dataHeaders{
 
 .groupHeader{
   width: 100%;
-  color: rgb(255, 255, 255);
+  color: #c1d0ea;
   height: 45px;
-  background-color:#070f39;
-  background-image: url('');
+  background: rgb(7,15,57);
+background: linear-gradient(90deg, rgba(7,15,57,1) 0%, rgba(24,36,96,1) 35%, rgba(7,15,57,1) 100%);
 }
 
 
@@ -156,7 +188,7 @@ p.groupHeadline {
 #dataSelector {
 	width: 200px;
 	line-height: 22px;
-	font-size: 16px;
+	
 	padding: 2px 0px;
 }
 
